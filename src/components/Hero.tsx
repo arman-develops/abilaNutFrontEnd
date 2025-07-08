@@ -1,5 +1,4 @@
 import HeroProps from '@/interfaces/HeroSectionProps';
-import React from 'react';
 
 function HeroSection({ 
   backgroundImage, 

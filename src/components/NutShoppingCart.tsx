@@ -3,7 +3,6 @@ import { useCart } from '@/hooks/useCart'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { ShoppingCart, X, Minus, Plus } from 'lucide-react'
-import { Link } from 'react-router-dom'
 
 export function NutShoppingCart() {
   const { cart, removeFromCart, updateQuantity, total } = useCart()

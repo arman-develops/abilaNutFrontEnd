@@ -1,4 +1,3 @@
-import React from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
@@ -15,7 +14,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useToast } from "@/hooks/use-toast"
-import { AtSign, Lock, Check } from 'lucide-react'
+import { AtSign, Lock } from 'lucide-react'
 
 const loginSchema = z.object({
   emailOrPhone: z.string().min(1, 'Email or phone number is required'),

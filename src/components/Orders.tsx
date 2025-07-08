@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useToast } from "@/hooks/use-toast"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
-import { Loader2, Package, ShoppingBag } from 'lucide-react'
+import { Loader2, ShoppingBag } from 'lucide-react'
 
 interface OrderItem {
   id: number
@@ -58,7 +58,7 @@ function OrderList({ orders }: { orders: Order[] }) {
           <CardHeader>
             <CardTitle className="flex justify-between items-center">
               <span>Order #{order.id}</span>
-              <Badge variant={order.status === 'pending' ? 'secondary' : 'success'}>
+              <Badge variant={order.status === 'pending' ? 'destructive' : 'secondary'}>
                 {order.status === 'pending' ? 'Pending' : 'Successful'}
               </Badge>
             </CardTitle>
